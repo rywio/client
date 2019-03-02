@@ -1,0 +1,41 @@
+.nav {
+  background: rgba(255, 255, 255, 0.85);
+  height: 68px;
+  box-shadow: unset;
+  line-height: 68px;
+}
+
+nav a {
+  color: black !important;
+  font-family: GS-Regular, sans-serif;
+}
+
+.shadow-fade-in {
+  animation: .35s shadow-fade-in cubic-bezier(0.39, 0.58, 0.57, 1);
+  box-shadow: 0 2px 6px 0 rgba(60, 64, 67, .15) !important;
+}
+
+.shadow-fade-out {
+  animation: .35s shadow-fade-out cubic-bezier(0.39, 0.58, 0.57, 1);
+  box-shadow: unset !important;
+}
+
+@keyframes shadow-fade-in {
+  0% {
+    box-shadow: unset;
+  }
+
+  100% {
+    box-shadow: 0 2px 6px 0 rgba(60, 64, 67, .15);
+  }
+}
+
+@keyframes shadow-fade-out {
+  0% {
+    box-shadow: 0 2px 6px 0 rgba(60, 64, 67, .15);
+  }
+
+  100% {
+    box-shadow: unset;
+  }
+}
