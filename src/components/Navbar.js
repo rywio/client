@@ -19,7 +19,7 @@ export default class Navbar extends Component {
     window.removeEventListener('scroll', this.handleScroll);
   }
   
-  handleScroll = () => {
+  handleScroll = (e) => {
     if (!ticking) {
       window.requestAnimationFrame(() => {
         if (window.scrollY > 0) {
@@ -37,12 +37,16 @@ export default class Navbar extends Component {
 
   render() {
     return (
-      <div className="navbar-fixed">
+      <div className="navbar-fixed animated fadeIn">
         <nav className={"nav" + this.state.shadow}>
           <div className="container">
             <div className="brand-logo center">
               <Link to="/dialogs">{this.props.header}</Link>
             </div>
+            
+            <ul className="links hide-on-med-and-down">
+              <li><a href="/">Home</a></li>
+            </ul>
           </div>
         </nav>
       </div>

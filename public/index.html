@@ -8,9 +8,15 @@
     <link rel="shortcut icon" href="%PUBLIC_URL%/icons/ico.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
+    <script src="./libs/jquery.js"></script>
     <script src="./libs/materialize.js"></script>
+    <script>
+      $(window).ready(() => {
+        $(".sidenav").sidenav()
+      })
+    </script>
 
-    <title>rywi</title>
+    <title>rywio</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
